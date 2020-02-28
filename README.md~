@@ -1,13 +1,10 @@
 # add-apt-repository
 Agrega repositorios ppa (Personal Package Archives) a distribuciones como debian o bunsenlabs de la misma forma como los harías en las distribuciones basadas en ubuntu.
 
-## pasos a ejecutar para su instalación
+## pasos a ejecutar
 
-	git clone https://github.com/juanro49/add-apt-repository.git
-	cd add-apt-repository
-	sudo cp add-apt-repository /usr/bin/add-apt-repository
-	sudo chmod o+x /usr/bin/add-apt-repository
-	sudo chown root:root /usr/bin/add-apt-repository
+	git clone https://github.com/rodrigoec19/add-apt-repository.git
+	sh ~/add-apt-repository/script.sh
 
 Luego ingresar el repositorio ppa en la terminal como lo harían en las distribuciones basadas en ubuntu.
 
