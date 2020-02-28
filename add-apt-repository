@@ -18,7 +18,6 @@ then
         apt update >> /dev/null 2> /tmp/${NAME}_apt_add_key.txt
         key=$(cat /tmp/${NAME}_apt_add_key.txt | cut -d":" -f6 | cut -d" " -f3)
         apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $key
-        rm -rf /tmp/apt_add_key.txt
         rm -rf /tmp/${NAME}_apt_add_key.txt
     fi
 else
