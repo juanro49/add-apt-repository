@@ -17,7 +17,7 @@ then
         echo "" >> /etc/apt/sources.list.d/additional-sources.list
         apt update >> /dev/null 2> /tmp/${NAME}_apt_add_key.txt
         key=$(cat /tmp/${NAME}_apt_add_key.txt | cut -d":" -f6 | cut -d" " -f3)
-        apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $key
+        apt-key adv --keyserver pgp.rediris.es --recv-keys $key
         rm -rf /tmp/${NAME}_apt_add_key.txt
     fi
 else
